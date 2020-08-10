@@ -105,6 +105,7 @@ class SleepTrackerViewModel(
 
     val navigateToSleepQuality: LiveData<SleepNight>
         get() = _navigateToSleepQuality
+
     fun doneNavigating() {
         _navigateToSleepQuality.value = null
     }
